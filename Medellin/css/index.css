@@ -1,0 +1,129 @@
+/*  assets/Fonts  */
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../assets/fonts/raleway-regular.eot');
+    src: url('../assets/fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/raleway-regular.woff') format('woff'),
+         url('../assets/fonts/raleway-regular.ttf') format('truetype'),
+         url('../assets/fonts/raleway-regular.svg#raleway-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('../assets/fonts/raleway-bold.eot');
+    src: url('../assets/fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/raleway-semibold.woff') format('woff'),
+         url('../assets/fonts/raleway-semibold.ttf') format('truetype'),
+         url('../assets/fonts/raleway-semibold.svg#raleway-semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('../assets/fonts/raleway-bold.eot');
+    src: url('../assets/fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/raleway-bold.woff') format('woff'),
+         url('../assets/fonts/raleway-bold.ttf') format('truetype'),
+         url('../assets/fonts/raleway-bold.svg#raleway-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+body {
+    background: #fff;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+}
+
+header .logo{
+    float: left;
+    margin-top: 40px;
+    width:9%;
+    margin-left: 30px;
+	
+}
+
+header nav{
+    float: right;
+    margin-top: 35px;
+    margin-right: 30px;
+}
+
+
+header nav ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    margin-left: 50px;
+}
+
+header nav ul li a {
+    text-decoration: none;  
+    font-family: "raleway-bold";
+    font-size: 14px;
+    transition: all .2s linear;
+    color: #346D85;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    color: #87CEEB;
+}
+
+footer {
+    background-color: #FFFFFF; 
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+}
+
+.footer-icons {
+    float: left;
+    margin-left: 30px;
+    margin-top: 45px;
+}
+
+
+.footer-icons img {
+    width: 17px; 
+    height: auto; 
+    margin-right: 20px;
+}
+
+.footer-text {
+    float: right;
+    margin-right: 30px;
+    margin-top: 45px;
+}
+
+.footer-text p {
+    margin: 0;
+    font-family: "raleway-bold";
+    font-size: 14px;
+    color: #346D85;
+    font-weight: bold;
+}
