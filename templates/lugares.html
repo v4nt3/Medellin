@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="{{ url_for('static', filename='imagenes/icon.png') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='actividades.css') }}">
+
+    <title>Lugares</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="inicio"><img class="logo" src="{{ url_for('static', filename='imagenes/logo.png') }}" alt="Medellin"/></a>
+        <nav>
+            <ul>
+                <li><a href="eventos">Eventos</a></li>
+                <li><a href="lugares">Lugares</a></li>
+                <li><a href="actividades">Actividades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Plan de Cultura de Medellín</h1>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-icons">
+            <img src="{{ url_for('static', filename='imagenes/fb.png') }}">
+            <img src="{{ url_for('static', filename='imagenes/in.png') }}">
+            <img src="{{ url_for('static', filename='imagenes/yt.png') }}">
+            <img src="{{ url_for('static', filename='imagenes/ig.png') }}">
+        </div>
+        <div class="footer-text">
+            <p>Medellín En Detalle</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

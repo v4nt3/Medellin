@@ -65,22 +65,29 @@ insert_data(data_base_path,table_name,columns,data)
 app = Flask(__name__)
 
 @app.route('/')
-@app.route('/inicio.html')
+@app.route('/inicio')
 def inicio():
-    return render_template('inicio.html')
+    return render_template('index.html')
 
+@app.route('/eventos')
+def eventos():
+    return render_template('eventos.html')
+
+@app.route('/lugares')
+def lugares():
+    return render_template('lugares.html')
 
 @app.route('/prueba')
 def prueba():
     data = read_data("data_base.db","actividades")
     return jsonify(data)
 
-@app.route('/actividades.html')
-def act():
+@app.route('/actividades')
+def actividades():
     return render_template('actividades.html')
 
-@app.route('/actividades',methods=[ 'POST','GET'])
-def actividades():
+@app.route('/obtenerActividades',methods=[ 'POST','GET'])
+def obtenerActividades():
     pedido = ""
     if request.method == "GET":
         data = read_data(data_base_path,table_name)
@@ -88,8 +95,6 @@ def actividades():
         print(data)
         return jsonify(data)
     return "Bad Request"
-
-
 
 
 if __name__ == '__main__':
