@@ -58,6 +58,7 @@ header .logo{
     margin-top: 25px;
     width:10%;
     margin-left: 45px;
+    transition: transform 0.3s ease;
 }
 
 .header .logo:hover {
@@ -135,6 +136,7 @@ main .objetivo{
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
+    color: #333333;
 }
 
 main h2, h3{
@@ -223,11 +225,13 @@ main h2, h3{
     text-align:justify;
     font-family: "raleway-regular";
     margin-left: 40px;
+    color: #333333;
 }
 
 .back{
     background-color: #FFCC6F;
     padding: 15px;
+    color: #333333;
 }
 
 .multimedia, .testimonios {
@@ -238,6 +242,7 @@ main h2, h3{
     width: 50%;
     margin-bottom: 20px;
     border-radius: 10px;   
+    transition: transform 0.3s ease;
 }
 
 .multimedia img:hover {
@@ -268,59 +273,189 @@ main h2, h3{
     height: 2px;
     background-color: #4CAF50;
     margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .contenido-destacado {
+    padding: 40px;
+    padding-top: 10px;
     text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    color: #333333;
 }
 
-.contenido-destacado h2 {
-    margin-bottom: 40px;
-    font-size: 24px;
-    color: #346D85;
-}
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+.destacado-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
-    justify-items: center;
 }
 
-.card {
-    background-color: #fff;
+.destacado-items div {
+    background-color: #4caf4fbd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100%;
-    max-width: 300px;
+    padding: 20px;
+    flex: 1 1 calc(25% - 40px);
+    box-sizing: border-box;
+    max-width: calc(25% - 40px);
+}
+
+.destacado-items h3 {
+    color: #333333;
+    margin-bottom: 10px;
+    font-family: "raleway-bold";
+}
+
+.destacado-items p {
+    color: #333333;
+    font-family: "raleway-regular";
+}
+
+
+
+.testimonios {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.testimonios h3 {
+    color: #333333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.testimonio {
+    background-color: #ffffff;
+    border-left: 5px solid #FFCC6F;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+    color: #333333;
+    font-family: "raleway-regular";
+    font-size: 15px;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-    display:block;
+
+.testimonio blockquote {
+    font-style: italic;
+    margin: 0 0 10px 0;
 }
 
-.card-content {
-    padding: 15px;
-}
-
-.card-content h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    color: #346D85;
-}
-
-.card-content p {
+.testimonio p {
+    font-weight: bold;
     margin: 0;
-    font-size: 14px;
-    color: #555;
+    text-align: right;
 }
+
+
+.testimonio blockquote {
+    border-left: none;
+    border-right: 5px solid #FFCC6F;
+    padding-right: 10px;
+}
+
+
+
+
+.reseñas {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.reseñas h2 {
+    margin: 0 auto 30px;
+    font-size: 28px;
+    background-color: #346D85;
+    color: #ffffff;
+    width: 95%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.reseñas-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.reseñas-container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 8px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reseña {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.reseña h3 {
+    color: #346D85;
+    margin-bottom: 10px;
+}
+
+.reseña p {
+    text-align: justify;
+}
+
+.reseña .rating {
+    color: gold;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.scroll-left, .scroll-right {
+    background-color: #346D85;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.scroll-left {
+    left: 10px;
+}
+
+.scroll-right {
+    right: 10px;
+}
+
+.scroll-left:hover, .scroll-right:hover {
+    background-color: #285c6b;
+}
+
+
+.separator {
+    margin: 20px auto; 
+    border: none; 
+    height: 1px; 
+    background-color: #ccc; 
+    width: 80%; 
+}
+
 
 
 
