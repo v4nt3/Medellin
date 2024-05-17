@@ -415,6 +415,7 @@ main h2, h3{
 
 .reseña p {
     text-align: justify;
+    font-family: "raleway-regular";
 }
 
 .reseña .rating {
