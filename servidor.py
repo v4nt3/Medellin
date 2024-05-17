@@ -71,7 +71,7 @@ def inicio():
 
 @app.route('/eventos')
 def eventos():
-    return render_template('eventos.html')
+    return render_template('eventos_dos.html')
 
 @app.route('/lugares')
 def lugares():

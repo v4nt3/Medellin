@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../static/imagenes/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="../static/eventos.css">
+    <title>Eventos</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="index"><img class="logo" src="../static/imagenes/logo.png" alt="Medellin"/></a>
+        <nav>
+            <ul>
+                <li><a href="eventos">Eventos</a></li>
+                <li><a href="lugares">Lugares</a></li>
+                <li><a href="actividades">Actividades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cuerpo_principal">
+        <div class="titulo">
+            <h1>Actividades</h1>
+            <p>¡Animate a participar!</p>
+            <img class="carro" src="{{ url_for('static', filename='imagenes/eventos_panel.jpeg') }}">
+        </div>
+        <br>
+        <br>
+
+        <!-- <section class="content_img_fondo">
+            <div class="img_fondo">
+                <h1 class="titulo_evento">Eventos</h1>
+            </div>
+        </section> -->
+
+        <h2 class="sub_titulo">Planes para disfrutar la diversidad cultural en Medellín</h2>
+
+        <section class="cont_info_eventos">
+
+            <table>
+
+                <tr>
+                    <td>
+                        <div class="table-container">
+
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/Feriadelasflores.jpg" alt="Imagen evento feria de las flores">
+                            </div>
+
+                            <div class="text_cont_1">
+                                <p>Es uno de los eventos más emblemáticos de Medellín, celebrado cada año en agosto. Incluye desfiles de carrozas adornadas con flores, eventos culturales, conciertos y exposiciones.</p>
+                            </div>
+
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="table-container">
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/festivalinternacionaldeltango.jpeg" alt="Imagen evento">
+                            </div>
+                            <div class="text_cont_1">
+                                <p>Un evento anual que reúne a artistas y aficionados del tango de todo el mundo. Incluye clases magistrales, milongas, conciertos y espectáculos de baile.</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="table-container">
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/festivalinternacionaldepoesia.jpeg" alt="Imagen evento">
+                            </div>
+                            <div class="text_cont_1">
+                                <p>Celebrado en la segunda semana de julio, este festival atrae a poetas de renombre internacional y ofrece lecturas de poesía, talleres y eventos culturales relacionados con la literatura.</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="table-container">
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/festivalinternacionaldeljazz.jpg" alt="Imagen evento">
+                            </div>
+                            <div class="text_cont_1">
+                                <p>Este evento reúne a reconocidos músicos de jazz de todo el mundo para ofrecer conciertos, talleres y actividades relacionadas con este género musical. Suele tener lugar en el mes de septiembre.</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="table-container">
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/festicaldelatrova.jpg" alt="Imagen evento">
+                            </div>
+                            <div class="text_cont_1">
+                                <p>Celebrado en octubre, este festival destaca la música y poesía tradicional colombiana, con la participación de trovadores locales e invitados internacionales.</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="table-container">
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/desfiledesillitero.jpg" alt="Imagen evento">
+                            </div>
+                            <div class="text_cont_2">
+                                <p>Es parte de la Feria de las Flores, pero merece una mención aparte. Se lleva a cabo el primer domingo de agosto y es un desfile colorido donde los silleteros llevan sobre sus espaldas enormes arreglos florales.</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="table-container">
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/festivalinternacionaldelcine.jpg" alt="Imagen evento">
+                            </div>
+                            <div class="text_cont_1">
+                                <p>Un evento anual que celebra el cine independiente y alternativo, con proyecciones de películas, talleres y actividades relacionadas con el séptimo arte.</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="table-container">
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/semanasanta.jpg" alt="Imagen evento">
+                            </div>
+                            <div class="text_cont_1">
+                                <p>Durante la Semana Santa, Medellin ofrece una serie de eventos religiosos y culturales, incluyendo procesiones, conciertos y representaciones teatrales.</p>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <div class="table-container">
+                            <div class="img_cont_1">
+                                <img src="../static/imagenes/feriaganadera.jpg" alt="Imagen evento">
+                            </div>
+                            <div class="text_cont_1">
+                                <p>Una de las ferias más importantes de la región, donde se exhiben animales de granja, se realizan concursos, subastas y se ofrecen actividades para toda la familia.</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </section>
+
+
+        <footer>
+            <div class="footer-icons">
+                <img src="../static/imagenes/fb.png">
+                <img src="../static/imagenes/in.png">
+                <img src="../static/imagenes/yt.png">
+                <img src="../static/imagenes/ig.png">
+            </div>
+            <div class="footer-text">
+                <p>Medellin En Detalle</p>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
