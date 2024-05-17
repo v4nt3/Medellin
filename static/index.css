@@ -293,8 +293,15 @@ main h2, h3{
     gap: 20px;
 }
 
+.item{
+    transition: transform 0.3s ease;
+}
+.item:hover {
+    transform: translateY(-10px);
+}
+
 .destacado-items div {
-    background-color: #4caf4fbd;
+    background-color: #ffffffbd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -313,54 +320,6 @@ main h2, h3{
     color: #333333;
     font-family: "raleway-regular";
 }
-
-
-
-.testimonios {
-    background-color: #ffffff;
-    padding: 25px 20px;
-    text-align: center;
-}
-
-.testimonios h3 {
-    color: #333333;
-    margin-bottom: 30px;
-    font-size: 28px;
-}
-
-.testimonio {
-    background-color: #ffffff;
-    border-left: 5px solid #FFCC6F;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    margin-bottom: 20px;
-    position: relative;
-    color: #333333;
-    font-family: "raleway-regular";
-    font-size: 15px;
-}
-
-
-.testimonio blockquote {
-    font-style: italic;
-    margin: 0 0 10px 0;
-}
-
-.testimonio p {
-    font-weight: bold;
-    margin: 0;
-    text-align: right;
-}
-
-
-.testimonio blockquote {
-    border-left: none;
-    border-right: 5px solid #FFCC6F;
-    padding-right: 10px;
-}
-
 
 
 
