@@ -75,7 +75,7 @@ def eventos():
 
 @app.route('/lugares')
 def lugares():
-    return render_template('lugares.html')
+    return render_template('lugares_dos.html')
 
 @app.route('/prueba')
 def prueba():
