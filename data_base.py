@@ -1,6 +1,6 @@
 import sqlite3
 DATA_BASE_NAME =  "data_base.db"
-schema = "schema.sql"
+schema = "schemal.sql"
 
 #Global connection and cursor
 connection = sqlite3.connect(DATA_BASE_NAME)
