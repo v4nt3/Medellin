@@ -24,14 +24,30 @@ function obtenerActividades() {
 }
 
 function generar_html(data){
-    console.log("data_generar_html");
-    console.log(data[1][1]);
-    var titulo = data[1][1];
-    var fecha = data[1][2];
-    var lugar = data[1][3];
-    var descripcion = data[1][4];
-    document.getElementById('actividadTitulo').innerHTML = titulo;
-    document.getElementById('actividadDescripcion').innerHTML = descripcion;
-    document.getElementById('actividadFecha').innerHTML = fecha;
-    document.getElementById('actividadLugar').innerHTML = lugar;
+    for (let i = 0; i < data.length;i++){
+        var actividad = data[i]
+        var titulo = actividad[1];
+        var fecha = actividad[2];
+        var lugar = actividad[3];
+        var descripcion = actividad[4];
+        var imagen = actividad[5]
+        console.log("imagen");
+        console.log(imagen);
+        var item = document.createElement('div');
+        item.classList.add = 'item';
+        var cardColumns = document.getElementsByClassName('card-columns')[0];
+        var cardContenido = `<div class="card">
+            <img class="card-img-top" src="../static/imagenes/${imagen}" alt="${imagen}">
+            <div class="card-body">
+                <h5 class="card-title" id="actividadTitulo">${titulo}</h5>
+                <p class="card-text" id="actividadDescripcion">${descripcion}</p>
+                <p class="card-text card-text text-muted mb-2" id="actividadFecha">${fecha}</p>
+                <!-- Miercoles 9 Abril 16:00 - 18:00 -->
+                <p class="card-text text-muted mb-2" id="actividadLugar">${lugar}</p>
+                <!-- <p class="card-text text-muted mb-2">Auditorio Bello</p> -->
+            </div>
+        </div>`
+        item.innerHTML = cardContenido;
+        cardColumns.append(item)
+    }
 }
