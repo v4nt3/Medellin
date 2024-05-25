@@ -1,0 +1,47 @@
+[
+    {
+        "nombre": "Feria de las flores",
+        "descripcion" : "Es uno de los eventos más emblemáticos de Medellín, celebrado cada año en agosto. Incluye desfiles de carrozas adornadas con flores, eventos culturales, conciertos y exposiciones.",
+        "imagen": "Feriadelasflores.jpg"
+    },
+    {
+        "nombre": "Feria de las flores",
+        "descripcion" : "Es uno de los eventos más emblemáticos de Medellín, celebrado cada año en agosto. Incluye desfiles de carrozas adornadas con flores, eventos culturales, conciertos y exposiciones.",
+        "imagen": "Feriadelasflores.jpg"
+    },
+    {
+        "nombre": "Festival Internacional de Poesía",
+        "descripcion": "Celebrado en la segunda semana de julio, este festival atrae a poetas de renombre internacional y ofrece lecturas de poesía, talleres y eventos culturales relacionados con la literatura.",
+        "imagen": "festivalinternacionaldepoesia.jpeg"
+      },
+      {
+        "nombre": "Festival Internacional del Jazz",
+        "descripcion": "Este evento reúne a reconocidos músicos de jazz de todo el mundo para ofrecer conciertos, talleres y actividades relacionadas con este género musical. Suele tener lugar en el mes de septiembre.",
+        "imagen": "festivalinternacionaldeljazz.jpg"
+      },
+      {
+        "nombre": "Festival de la Trova",
+        "descripcion": "Celebrado en octubre, este festival destaca la música y poesía tradicional colombiana, con la participación de trovadores locales e invitados internacionales.",
+        "imagen": "festicaldelatrova.jpg"
+      },
+      {
+        "nombre": "Desfile de silletero",
+        "descripcion": "Es parte de la Feria de las Flores, pero merece una mención aparte. Se lleva a cabo el primer domingo de agosto y es un desfile colorido donde los silleteros llevan sobre sus espaldas enormes arreglos florales.",
+        "imagen": "desfiledesillitero.jpg"
+      },
+      {
+        "nombre": "Festival Internacional Del Cine",
+        "descripcion": "Un evento anual que celebra el cine independiente y alternativo, con proyecciones de películas, talleres y actividades relacionadas con el séptimo arte.",
+        "imagen": "festivalinternacionaldelcine.jpg"
+      },
+      {
+        "nombre": "Semana Santa",
+        "descripcion": "Durante la Semana Santa, Medellin ofrece una serie de eventos religiosos y culturales, incluyendo procesiones, conciertos y representaciones teatrales.",
+        "imagen": "semanasanta.jpg"
+      },
+      {
+        "nombre": "Feria Ganadera",
+        "descripcion": "Una de las ferias más importantes de la región, donde se exhiben animales de granja, se realizan concursos, subastas y se ofrecen actividades para toda la familia.",
+        "imagen": "feriaganadera.jpg"
+      }
+]

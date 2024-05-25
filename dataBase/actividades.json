@@ -1,0 +1,87 @@
+[
+    {
+      "nombre": "Charla concientización Cultural",
+      "fecha": "2023-04-09 16:00",
+      "lugar": "Universidad de San Buenaventura",
+      "descripcion": "Primera charla de concientización cultural - Eje educatvio",
+      "imagen": "charla_uno.jpeg"
+    },
+    {
+      "nombre": "Charla concientización Cultural",
+      "fecha": "2023-04-23 16:00",
+      "lugar": "Universidad de San Buenaventura",
+      "descripcion": "Segunda charla de concientización cultural - Eje educatvio",
+      "imagen": "charla_dos.jpeg"
+    },
+    {
+      "nombre": "Mesa de Debate",
+      "fecha": "2023-05-14 14:00",
+      "lugar": "Universidad de San Buenaventura",
+      "descripcion": "Mesa de debate puesta en comun - Eje educatvio",
+      "imagen": "debate_educativo.jpeg"
+    },
+    {
+      "nombre": "Mesa de Debate",
+      "fecha": "2023-05-15 14:00",
+      "lugar": "Universidad de San Buenaventura",
+      "descripcion": "Mesa de debate puesta en comun - Eje territorial",
+      "imagen": "debate_territorial.jpeg"
+    },
+    {
+      "nombre": "Charla concientización Cultural",
+      "fecha": "2023-06-04 16:00",
+      "lugar": "Universidad de Antioquia",
+      "descripcion": "Tercera charla de concientización cultural - Eje consumo cultural",
+      "imagen": "charla_tres.jpeg"
+    },
+    {
+      "nombre": "Charla concientización Cultural",
+      "fecha": "2023-06-25 16:00",
+      "lugar": "Universidad Nacional de Medellín",
+      "descripcion": "Cuarta charla de concientización cultural - Eje comunidades y territorio digital",
+      "imagen": "charla_cuatro.jpeg"
+    },
+    {
+      "nombre": "Mesa de Debate",
+      "fecha": "2023-07-16 14:00",
+      "lugar": "Universidad de Antioquia",
+      "descripcion": "Mesa de debate puesta en comun - consumo cultural",
+      "imagen": "plenario.jpeg"
+    },
+    {
+      "nombre": "Mesa de Debate",
+      "fecha": "2023-07-17 14:00",
+      "lugar": "Universidad Nacional de Medellín",
+      "descripcion": "Mesa de debate puesta en comun - comunidades y territorio digital",
+      "imagen": "charla_tres.jpeg"
+    },
+    {
+      "nombre": "Plenario",
+      "fecha": "2023-08-13 09:30",
+      "lugar": "Universidad de Antioquia",
+      "descripcion": "null",
+      "imagen": "plenario.jpeg"
+    },
+    {
+      "nombre": "Ciclovia",
+      "fecha": "2023-09-07 00:00",
+      "lugar": "Ciclovia Medellin",
+      "descripcion": "Festival de musica y danza primer dia",
+      "imagen": "ciclovia.webp"
+    },
+    {
+      "nombre": "Ciclovia",
+      "fecha": "2023-09-14 00:00",
+      "lugar": "Ciclovia Medellin",
+      "descripcion": "Festival de musica y danza segundo dia",
+      "imagen": "ciclovia.webp"
+    },
+    {
+      "nombre": "Ciclovia",
+      "fecha": "2023-09-21 00:00",
+      "lugar": "Ciclovia Medellin",
+      "descripcion": "Festival de musica y danza tercer dia",
+      "imagen": "ciclovia.webp"
+    }
+  ]
+  

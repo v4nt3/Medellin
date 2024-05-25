@@ -1,0 +1,57 @@
+[
+    {
+      "nombre": "Piedra del Peñon",
+      "lugar": "Guatapé, Antioquia",
+      "descripcion": "El peñón de Guatapé, o piedra del Peñol, es un monolito de 220 metros de altura, localizado en el término municipal de Guatapé, Antioquia, Colombia. Elevación: 2.137 m.",
+      "imagen": "cb.jpg"
+    },
+    {
+      "nombre": "Jardín Botánico Medellín",
+      "lugar": "Aranjuez, Medellín",
+      "descripcion": "El Jardín Botánico de Medellín Joaquín Antonio Uribe es un jardín botánico y una fundación privada de unas 13.2 hectáreas de extensión, ubicado en la ciudad colombiana de Medellín. Cuenta con un recinto para eventos llamado el Orquideorama, un lugar arquitectónico para la exposición de flores.",
+      "imagen": "jardin.jpeg"
+    },
+    {
+      "nombre": "Pueblito Paisa",
+      "lugar": "Cerro Nutibara",
+      "descripcion": "El Cerro Nutibara es una pequeña formación montañosa ubicada en la ciudad colombiana de Medellín, en el centro geográfico del Valle de Aburrá, en la margen occidental del río Medellín, en medio de la zona urbana, y es uno de los pocos ecosistemas que se conservan en localidad.En su cima se encuentra el Pueblito Paisa, una alegoría a los municipios de la Región Paisa construido en 1977.",
+      "imagen": "pueblo.jpeg"
+    },
+    {
+      "nombre": "Comuna 13",
+      "lugar": "San Javier",
+      "descripcion": "La Comuna 13 es un lugar turístico colombiano en la ciudad de Medellín. La capital colombiana está dividida en comunas, que son unidades administrativas y geográficas utilizadas para la planificación y la gestión urbana. La Comuna número 13 se caracteriza principalmente por superar una etapa de crisis violenta en torno a las drogas y delincuencia, la cual fue superada y transformada por los esfuerzos de la comunidad para mejorar su entorno.",
+      "imagen": "comuna-13-historia-turismo-4.jpg"
+    },
+    {
+      "nombre": "Estadio Atanasio Girardot",
+      "lugar": "Laureles, Medellín",
+      "descripcion": "La Unidad Deportiva Atanasio Girardot es un complejo urbanístico ubicado en la ciudad de Medellín, Colombia, dedicado al deporte y destacado por su orden, belleza urbanística, por su zona verde y acucioso mantenimiento.",
+      "imagen": "estadio.jpeg"
+    },
+    {
+      "nombre": "Plaza Botero",
+      "lugar": "Parque en Medellín",
+      "descripcion": "La Plaza Botero, rodeada por el Museo de Antioquia y el Palacio de la Cultura Rafael Uribe Uribe, es un parque exterior de 7.000 m² que exhibe 23 esculturas del artista colombiano Fernando Botero, quien donó estas y varias otras obras de arte para la renovación del museo en 2004.",
+      "imagen": "plaza-botero.jpg"
+    },
+    {
+      "nombre": "Museo de Antioquia",
+      "lugar": "Antiguo Palacio Municipal",
+      "descripcion": "El Museo de Antioquia, antiguo Palacio Municipal, es un museo situado en el centro de Medellín que alberga colecciones con relevancia internacional. Fue el primero fundado en el departamento de Antioquia y el segundo en Colombia.",
+      "imagen": "Museo-de-Antioquia.jpeg"
+    },
+    {
+      "nombre": "Parque de la Conservación",
+      "lugar": "Parque zoológico en Medellín",
+      "descripcion": "El Parque de la Conservación es un Parque ubicado en la ciudad de Medellín. Dado su cambio de objeto, su nombre original, Zoológico Santa Fe fue cambiado en 2020, y tiene una población de más de 500 animales de 122 especies procedentes del continente americano en su mayoría.",
+      "imagen": "parque-de-la-conservacion1.jpg"
+    },
+    {
+      "nombre": "Metro Estación Arví",
+      "lugar": "La vereda El Tambo del corregimiento de Santa Elena",
+      "descripcion": "La Estación Arví es la segunda y última estación de la línea L del Metrocable de Medellín. Se encuentra en la vereda El Tambo del corregimiento de Santa Elena. Fue inaugurada a principios del 2010, junto con el Parque Ecoturístico Arví, el cual abastece de turistas.",
+      "imagen": "Metro.jpeg"
+    }
+  ]
+  
