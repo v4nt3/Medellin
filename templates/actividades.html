@@ -8,10 +8,11 @@
     <link rel="icon" type="image" href="{{ url_for('static', filename='imagenes/icon.png') }}"/>
     <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}"> -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='actividades.css') }}">
+    <script src="{{ url_for('static', filename='js/actividades.js') }}" async></script>
 
     <title>Actividades</title>
 </head>
-<body>
+<body onload="obtenerActividades()">
 
   <header class="header">
     <a href="inicio"><img class="logo" src="{{ url_for('static', filename='imagenes/logo.png') }}" alt="Medellin"/></a>
@@ -29,6 +30,7 @@
             <div class="titulo">
                 <h1>Actividades</h1>
                 <p>¡Animate a participar!</p>
+                
                 <img class="carro" src="{{ url_for('static', filename='imagenes/panel_actividades.jpeg') }}">
             </div>
             <br>
@@ -37,14 +39,15 @@
                 <h1>Actividades de concientización cultural Medellín</h1>
             </div>
             <br>
-            
+             
             <div class="card-deck" >
                 <div class="card">
                   <img class="card-img-top" src="{{ url_for('static', filename='imagenes/charla_uno.jpeg') }}" alt="Card image cap" style="height: 260px;">
                   <div class="card-body">
-                    <h5 class="card-title">Charla concientización Cultural</h5>
+                    <h5 class="card-title" id="actividadUno"></h5>
                     <p class="card-text">Primera charla de concientización cultural - Eje educatvio</p>
-                    <p class="card-text card-text text-muted mb-2">Miercoles 9 Abril 16:00 - 18:00</p>
+                    <p class="card-text card-text text-muted mb-2" id="actividadFecha"></p>
+                    <!-- Miercoles 9 Abril 16:00 - 18:00 -->
                     <p class="card-text text-muted mb-2">Universidad de San Buenaventura</p>
                     <p class="card-text text-muted mb-2">Auditorio Bello</p>
                     
