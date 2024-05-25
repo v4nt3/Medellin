@@ -26,6 +26,12 @@ function obtenerActividades() {
 function generar_html(data){
     console.log("data_generar_html");
     console.log(data[1][1]);
-    document.getElementById('actividadUno').innerHTML = data[1][1];
-    document.getElementById('actividadFecha').innerHTML = data[1][2];
+    var titulo = data[1][1];
+    var fecha = data[1][2];
+    var lugar = data[1][3];
+    var descripcion = data[1][4];
+    document.getElementById('actividadTitulo').innerHTML = titulo;
+    document.getElementById('actividadDescripcion').innerHTML = descripcion;
+    document.getElementById('actividadFecha').innerHTML = fecha;
+    document.getElementById('actividadLugar').innerHTML = lugar;
 }
