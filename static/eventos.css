@@ -62,8 +62,8 @@ header .logo{
 
 header nav{
     float: right;
-    margin-top: 40px;
-    margin-right: 30px;
+    margin-top: 45px;
+    margin-right: 45px;
 }
 
 
@@ -77,7 +77,7 @@ header nav ul li{
 header nav ul li a {
     text-decoration: none;  
     font-family: "raleway-bold";
-    font-size: 14px;
+    font-size: 16px;
     transition: all .2s linear;
     color: #346D85;
     font-weight: bold;
@@ -94,7 +94,7 @@ main {
 
 main h1{
     font-family: "raleway-bold";
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 main p{
@@ -107,6 +107,22 @@ main .titulo{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+main .titulo-h2{
+    display: flex;
+    text-align: center;
+    padding: 50px;
+    padding-top: 15px;
+}
+
+.titulo-h2 h2{
+    display:flex;
+    background-color: #853473;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
 }
 
 main .carro{
@@ -163,103 +179,4 @@ footer {
     font-weight: bold;
 }
 
-.cuerpo_principal{
-    width: 100%;
-    height: auto;
-    margin: 0;
-}
 
-.img_fondo{
-    width: 193vh;
-    height: 85vh;
-    background: url(/Medellin/assets/img_event/Logo\ festibales.jpeg) no-repeat center;
-    background-size: cover;
-    border-radius: 5vh;
-    margin-top: 16vh;
-    left: 5vh;
-}
-
-.content_img_fondo{
-    display: flexbox;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5vh;
-}
-
-.titulo_evento{
-    font-size: 60px;
-    position: relative;
-    top: 50%;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-}
-
-.sub_titulo{
-    margin: 5vh;
-    font-size: 30px;
-    text-align: center;
-    font-family: "raleway-bold";
-}
-
-.cont_info_eventos{
-    display: block;
-    width: 100%;
-    height: auto;    
-    text-align: center;
-    justify-content: center;
-}
-
-table{
-    position: relative;
-    width: 100%;
-    height: auto;
-    left: 0.5vh;
-    margin-left: 6.5vh;
-    margin-right: 1vh;
-}
-
-td{
-    width: 33%;
-    height: auto;
-    text-align: center;
-    justify-content: center;
-    
-}
-
-.table-container {
-    width: 49vh;
-    height: 60vh;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    /* border: 1vh solid black; */
-    border-radius: 2vh;
-    margin-bottom: 4vh;
-}
-
-.table-container table {
-    width: 100%;
-    height: auto;
-}
-
-.img_cont_1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img_cont_1 img {
-    max-width: 50vh;
-    width: 100%;
-    height: 40vh;
-    max-height: auto;
-    display: block;
-    border-radius: 1vh;
-}
-.text_cont_1{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-    /* border-top: 1vh solid black; */
-}

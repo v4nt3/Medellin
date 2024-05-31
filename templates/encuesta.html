@@ -3,46 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
-    <title>Formulario de Opiniones</title>
+    <link class="icon" rel="icon" type="image/png" href="../static/imagenes/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="../static/encuesta.css">
+    <title>Encuesta y Opiniones</title>
 </head>
 <body>
-    <main>
 
-        <section class="contenedor_1">
+<header class="header">
+    <a href="inicio"><img class="logo" src="../static/imagenes/logo.png" alt="Medellin"/></a>
+    <nav>
+        <ul>
+            <li><a href="eventos">Eventos</a></li>
+            <li><a href="lugares">Lugares</a></li>
+            <li><a href="actividades">Actividades</a></li>
+            <li><a href="encuesta">Encuesta</a></li>
+        </ul>
+    </nav>
+</header>
 
-            <aside>
-
-                <div>
-                    <img class="contenedor_img" src="{{ url_for('static', filename='mitos-y-leyendas.jpg') }}" alt="Imagen representativa de carnavales">
-                </div>
-
-                <div class="text_cont_1">
-                    <h1>Opiniones</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero.
-                    </p>
-                </div>
-
-            </aside>
-
-        </section>
-
-        <section class="contenedor_2">
-
-            <form method="POST" action="/procesar_formulario">
-                <div class="descripcion_formulario">
-                    <h1>Título del Formulario</h1>
-                    <p>Descripción o instrucciones del formulario.</p>
-                    <hr>
-                </div>
-
-                <div class="info_formulario">
-
-                    <h1>Datos</h1>
-
+<main>
+    <section id="survey-container">
+        <div id="left-column">
+            <img src="../static/imagenes/guatape.jpg" alt="Foto del Evento" class="event-photo">
+            <div class="testimonials">
+                <h3>Testimonios</h3>
+                <p>"¡Un evento increíble, me encantó cada parte!" - Ana</p>
+                <p>"La organización fue excelente, lo recomendaría." - Juan</p>
+            </div>
+        </div>
+        <div id="main-content">
+            <h1>Encuesta de Satisfacción y Opiniones</h1>
+            <p>Nos encantaría conocer tu opinión sobre el evento y las actividades. Por favor, completa la siguiente encuesta.</p>
+            <div id="progress-bar"></div>
+            <form id="survey-form" method="POST" action="/procesar_formulario">
+                
+                <div class="form-group">
                     <label for="eventos">Seleccione la actividad a calificar</label>
-                    <select class="op_eventos" id="eventos" name="op_eventos">
+                    <select id="eventos" name="op_eventos" required>
                         <option value="opcion1">Opción 1</option>
                         <option value="opcion2">Opción 2</option>
                         <option value="opcion3">Opción 3</option>
@@ -53,9 +50,11 @@
                         <option value="opcion8">Opción 8</option>
                         <option value="opcion9">Opción 9</option>
                     </select>
+                </div>
 
+                <div class="form-group">
                     <label for="lugares">Seleccione el lugar de la actividad</label>
-                    <select class="op_lugares" id="lugares" name="op_lugares">
+                    <select id="lugares" name="op_lugares" required>
                         <option value="opcion1">Opción 1</option>
                         <option value="opcion2">Opción 2</option>
                         <option value="opcion3">Opción 3</option>
@@ -66,39 +65,69 @@
                         <option value="opcion8">Opción 8</option>
                         <option value="opcion9">Opción 9</option>
                     </select>
+                </div>
 
+                <div class="form-group">
                     <label for="nombre">Nombres</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
-
-                    <label for="apellido">Apellidos</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Apellidos" required>
-
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
-
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
-
-                    <label for="satisfaccion">Nivel de satisfacción</label>
-                    <select class="nivel_satisfaccion" id="satisfaccion" name="nivel_satisfaccion">
-                        <option value="opcion1">Opción 1</option>
-                        <option value="opcion2">Opción 2</option>
-                        <option value="opcion3">Opción 3</option>
-                        <option value="opcion4">Opción 4</option>
-                        <option value="opcion5">Opción 5</option>
-                    </select>
-
-                    <label for="comentario">Opinión</label>
-                    <textarea id="comentario" name="comentario" placeholder="Comentario" rows="6" required></textarea>
-
-                    <input type="submit" class="boton_envio" value="Enviar">
-
                 </div>
 
+                <div class="form-group">
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellidos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="satisfaction">Nivel de Satisfacción: 
+                        <span class="tooltip">
+                            <span class="tooltiptext">Seleccione su nivel de satisfacción con el evento.</span>
+                        </span>
+                    </label>
+                    <select id="satisfaction" name="nivel_satisfaccion" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Muy Satisfecho">Muy Satisfecho</option>
+                        <option value="Satisfecho">Satisfecho</option>
+                        <option value="Neutral">Neutral</option>
+                        <option value="Insatisfecho">Insatisfecho</option>
+                        <option value="Muy Insatisfecho">Muy Insatisfecho</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Opinión</label>
+                    <textarea id="comentario" name="comentario" placeholder="Comentario" rows="6" required></textarea>
+                </div>
+
+                <div class="button-container">
+                    <input type="submit" class="boton_envio" value="Enviar">
+                </div>
             </form>
+            <div id="message"></div>
+        </div>
+    </section>
+</main>
 
-        </section>
+<footer>
+    <div class="footer-icons">
+        <img src="../static/imagenes/fb.png" alt="Facebook">
+        <img src="../static/imagenes/in.png" alt="LinkedIn">
+        <img src="../static/imagenes/yt.png" alt="YouTube">
+        <img src="../static/imagenes/ig.png" alt="Instagram">
+    </div>
+    <div class="footer-text">
+        <p>Medellín En Detalle</p>
+    </div>
+</footer>
 
-    </main>
 </body>
 </html>

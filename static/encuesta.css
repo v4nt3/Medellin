@@ -1,0 +1,290 @@
+/*  assets/Fonts  */
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('fonts/raleway-regular.eot');
+    src: url('fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-regular.woff') format('woff'),
+         url('fonts/raleway-regular.ttf') format('truetype'),
+         url('fonts/raleway-regular.svg#raleway-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('fonts/raleway-bold.eot');
+    src: url('fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-semibold.woff') format('woff'),
+         url('fonts/raleway-semibold.ttf') format('truetype'),
+         url('fonts/raleway-semibold.svg#raleway-semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('fonts/raleway-bold.eot');
+    src: url('fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway-bold.woff') format('woff'),
+         url('fonts/raleway-bold.ttf') format('truetype'),
+         url('fonts/raleway-bold.svg#raleway-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.icon{
+    width: 1px;
+    height: auto;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+}
+
+
+header{
+    width: 100%;
+    height: 110px;
+    background-color: #ffffff; 
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+header .logo{
+    float: left;
+    margin-top: 25px;
+    width:10%;
+    margin-left: 45px;
+    transition: transform 0.3s ease;
+    
+}
+
+.header .logo:hover {
+    transform: scale(1.1);
+}
+
+header nav{
+    float: right;
+    margin-top: 35px;
+    margin-right: 45px;
+}
+
+
+header nav ul li{
+    list-style: none;
+    display: block;
+    float: left;
+    margin-left: 50px;
+}
+
+header nav ul li a {
+    text-decoration: none;  
+    font-family: "raleway-bold";
+    font-size: 16px;
+    transition: all .2s linear;
+    color: #346D85;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    color: #87CEEB;
+}
+
+
+#survey-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#left-column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #4caf4f60;
+    text-align: center;
+}
+
+#left-column .event-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#left-column .testimonials {
+    margin-top: 20px;
+}
+
+#left-column .testimonials h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: "raleway-bold";
+}
+
+#left-column .testimonials p {
+    font-size: 14px;
+    font-style: italic;
+    font-family: "raleway-regular";
+}
+
+#main-content {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+}
+
+#main-content h1 {
+    font-size: 33px;
+    margin-bottom: 10px;
+    font-family: "raleway-bold";
+    text-align: center;
+}
+
+#main-content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: "raleway-regular";
+    text-align: center;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #FFCC6F;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#survey-form .form-group {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#survey-form .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: "raleway-semibold";
+}
+
+#survey-form .form-group input,
+#survey-form .form-group select,
+#survey-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "raleway-regular";
+    height: auto;
+}
+
+#survey-form .form-group select{
+    width: 103%;
+}
+
+#survey-form .form-group .tooltip {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+#survey-form .form-group .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#survey-form .form-group .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#survey-form .form-group .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.boton_envio {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.boton_envio:hover {
+    background-color: #FFCC6F;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: #FFFFFF; 
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    height: 90px;
+    z-index: 1000;
+    position: relative; 
+    margin-top: auto; 
+}
+
+.footer-icons {
+    float: left;
+    margin-left: 30px;
+    margin-top: 45px;
+    transition: transform 0.3s;
+}
+
+
+.footer-icons img {
+    width: 17px; 
+    height: auto; 
+    margin-right: 20px;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2);
+}
+
+.footer-text {
+    float: right;
+    margin-right: 30px;
+    margin-top: 45px;
+}
+
+.footer-text p {
+    margin: 0;
+    font-family: "raleway-bold";
+    font-size: 14px;
+    color: #346D85;
+    font-weight: bold;
+}

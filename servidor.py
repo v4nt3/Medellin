@@ -38,6 +38,10 @@ def prueba():
 def actividades():
     return render_template('actividades.html')
 
+@app.route('/encuesta')
+def encuesta():
+    return render_template('encuesta.html')
+
 @app.route('/obtenerActividades',methods=[ 'POST','GET'])
 def obtenerActividades():
     pedido = ""
