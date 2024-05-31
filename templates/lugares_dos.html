@@ -3,58 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image" href="../assets/img/icon.png"/>
+    <link class="icon" rel="icon" type="image" href="../static/imagenes/icon.png"/>
     <link rel="stylesheet" href="{{url_for('static', filename='lugares.css')}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <style>
-        main {
-            margin-top: 150px; /* Ajusta este valor según sea necesario */
-        }
+    <script src="{{ url_for('static', filename='js/lugares.js') }}" async></script>
+    <title>Lugares</title>
 
-        .titulo {
-            text-align: center;
-            margin-bottom: 10px; /* Espacio entre el título y el carrusel */
-        }
 
-        .titulo h1 {
-            font-size: 40px;
-            font-weight: bold;
-            color: #333; /* Color del título */
-        }
-
-        .titulo h2 {
-            font-size: 24px;
-            color: #666; /* Color del subtítulo */
-        }
-        /* Ajuste de tamaño para las imágenes del carrusel */
-        .carousel-inner img {
-            width: 100%;
-            height: 550px; /* Ajusta el alto deseado */
-            object-fit: cover;
-        }
-        /* Ajuste de tamaño para las imágenes de las tarjetas */
-        .card-img-top {
-            width: 100%;
-            height: 200px; /* Ajusta el alto deseado */
-            object-fit: cover;
-        }   
-        /* Estilo para el título */
-        .section-title {
-            margin: 70px 0 40px; 
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-            color: #333;
-        }    
-        .container {
-        margin-top: 50px; /* Ajusta el valor según sea necesario */
-        }
-
-    </style>
-    <title>Medellin En Detalle</title>
 </head>
-<body>
+<body onload="obtenerLugares()">
     <header class="header">
         <a href="inicio"><img class="logo" src="{{url_for('static', filename='imagenes/logo.png')}}" alt="Medellin"/></a>
         <nav>
@@ -62,311 +19,65 @@
                 <li><a href="eventos">Eventos</a></li>
                 <li><a href="lugares">Lugares</a></li>
                 <li><a href="actividades">Actividades</a></li>
+                <li><a href="encuesta">Encuesta</a></li>
             </ul>
         </nav>
     </header> 
 
     <main>
+        <div class="container align-items-center">
         <div class="titulo">
             <h1>Lugares para conocer Medellín</h1>
-            <h2>Conoce nuestra área metropolitana</h2>
+            <p>Conoce nuestra área metropolitana</p>
         </div>
 
-        <!-- Aquí va tu carrusel y otros contenidos -->
+        <div class="container">
+
+            <div id="carouselExampleIndicators" class="carousel slide mt-4" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/imagenes/penon.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/imagenes/PueblitoPaisa.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/imagenes/COMUNA13principal.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/imagenes/orquideorama-scaled.jpg" alt="Imagen 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/imagenes/65cce1ae49fc2.jpeg" alt="Imagen 5">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+          
+                <div class="titulo">
+                    <h1 class="section-title">Lugares únicos para conocer en Medellín</h1>
+                </div>
+
+                <br>
+                <div class="card-columns">
+                    
+                </div>
+                <br> 
+
+            </div>
+           
     </main>
+<br>
 
+    
 
-    <div class="container">
-        <!-- Carrusel de imágenes -->
-        <div id="carouselExampleIndicators" class="carousel slide mt-4" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/static/imagenes/penon.jpg" alt="Imagen 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/imagenes/PueblitoPaisa.jpg" alt="Imagen 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/imagenes/COMUNA13principal.jpg" alt="Imagen 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/imagenes/orquideorama-scaled.jpg" alt="Imagen 4">
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/imagenes/65cce1ae49fc2.jpeg" alt="Imagen 5">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
-        </div>
-
-        <!-- Título para los lugares -->
-        <h2 class="section-title">Lugares para conocer Medellín</h2>
-
-        <!-- Cards de lugares -->
-        <div id="lugares-container" class="row mt-4">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/cb.jpg" class="card-img-top" alt="Imagen 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Piedra el Peñon</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/jardin.jpeg" class="card-img-top" alt="Imagen 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Jardin Botanico Medellin</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal2">Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/pueblo.jpeg" class="card-img-top" alt="Imagen 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Pueblito Paisa</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/comuna-13-historia-turismo-4.jpg" class="card-img-top" alt="Imagen 4">
-                    <div class="card-body">
-                        <h5 class="card-title">Comuna 13</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal4">Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/estadio.jpeg" class="card-img-top" alt="Imagen 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Estadio Atanasio Girardot</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal5">Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/plaza-botero.jpg" class="card-img-top" alt="Imagen 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Plaza Botero</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal6">Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/Museo-de-Antioquia.jpeg" class="card-img-top" alt="Imagen 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Museo Antioquia</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal7">Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/parque-de-la-conservacion1.jpg" class="card-img-top" alt="Imagen 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Parque de la conservacion</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal8">Info</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="/static/imagenes/Metro.jpeg" class="card-img-top" alt="Imagen 5">
-                    <div class="card-body">
-                        <h5 class="card-title">Metro Estacion Arvi</h5>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal9">Info</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modales para información detallada de cada lugar -->
-    <!-- Modal 1 -->
-    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">Piedra el Peñon</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>El peñón de Guatapé, o piedra del Peñol, es un monolito de 220 metros de altura, localizado en el término municipal de Guatapé, Antioquia, Colombia.
-
-                        Elevación: 2.137 m</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 2 -->
-    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel2">Jardin Botanico Medellin</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>El Jardín Botánico de Medellín Joaquín Antonio Uribe es un jardín botánico y una fundación privada de unas 13.2 hectáreas de extensión, ubicado en la ciudad colombiana de Medellín. Cuenta con un recinto para eventos llamado el Orquideorama, un lugar arquitectónico para la exposición de flores.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 3 -->
-    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel3">Pueblito Paisa</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>El Cerro Nutibara es una pequeña formación montañosa ubicada en la ciudad colombiana de Medellín, en el centro geográfico del Valle de Aburrá, en la margen occidental del río Medellín, en medio de la zona urbana, y es uno de los pocos ecosistemas que se conservan en localidad.En su cima se encuentra el Pueblito Paisa, una alegoría a los municipios de la Región Paisa construido en 1977</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 4 -->
-    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel4">Comuna 13</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>La Comuna 13 es un lugar turístico colombiano en la ciudad de Medellín. La capital colombiana está dividida en comunas, que son unidades administrativas y geográficas utilizadas para la planificación y la gestión urbana. La Comuna número 13 se caracteriza principalmente por superar una etapa de crisis violenta en torno a las drogas y delincuencia, la cual fue superada y transformada
-                         por los esfuerzos de la comunidad para mejorar su entorno.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 5 -->
-    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel5">Estadio Atanasio Girardot</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>La Unidad Deportiva Atanasio Girardot es un complejo urbanístico ubicado en la ciudad de Medellín, Colombia, dedicado al deporte y destacado por su orden, 
-                        belleza urbanística, por su zona verde y acucioso mantenimiento.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel6" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel4">Plaza Botero</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>La Plaza Botero, rodeada por el Museo de Antioquia y el Palacio de la Cultura Rafael Uribe Uribe, es un parque exterior de 7.000 m² que exhibe 23 esculturas del artista colombiano Fernando Botero, quien donó estas y varias otras obras de arte para la renovación del museo en 2004</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="exampleModalLabel7" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel4">Museo de Antioquia</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>El Museo de Antioquia, antiguo Palacio Municipal, es un museo situado en el centro de Medellín que alberga colecciones con relevancia internacional. Fue el primero fundado en el departamento de Antioquia y el segundo en Colombia. </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="exampleModalLabel8" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel4">Parque de la conservación</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>El Parque de la Conservación es un Parque ubicado en la ciudad de Medellín. Dado su cambio de objeto, su nombre original, Zoológico Santa Fe fue cambiado en 2020, ​ y tiene una población de más de 500 animales de 122 especies procedentes del continente americano en su mayoría.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="exampleModalLabel9" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel4">Metro Estacion Arvi</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>La Estación Arví es la segunda y última estación de la línea L del Metrocable de Medellín. Se encuentra en la vereda El Tambo del corregimiento de Santa Elena. Fue inaugurada a principios del 2010, junto con el Parque Ecoturístico Arví, el cual abastece de turistas.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <footer>
         <div class="footer-icons">
             <img src="{{url_for('static', filename='imagenes/fb.png')}}">
@@ -380,6 +91,9 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>

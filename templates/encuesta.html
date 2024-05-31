@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+    <title>Formulario de Opiniones</title>
+</head>
+<body>
+    <main>
+
+        <section class="contenedor_1">
+
+            <aside>
+
+                <div>
+                    <img class="contenedor_img" src="{{ url_for('static', filename='mitos-y-leyendas.jpg') }}" alt="Imagen representativa de carnavales">
+                </div>
+
+                <div class="text_cont_1">
+                    <h1>Opiniones</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero.
+                    </p>
+                </div>
+
+            </aside>
+
+        </section>
+
+        <section class="contenedor_2">
+
+            <form method="POST" action="/procesar_formulario">
+                <div class="descripcion_formulario">
+                    <h1>Título del Formulario</h1>
+                    <p>Descripción o instrucciones del formulario.</p>
+                    <hr>
+                </div>
+
+                <div class="info_formulario">
+
+                    <h1>Datos</h1>
+
+                    <label for="eventos">Seleccione la actividad a calificar</label>
+                    <select class="op_eventos" id="eventos" name="op_eventos">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                        <option value="opcion4">Opción 4</option>
+                        <option value="opcion5">Opción 5</option>
+                        <option value="opcion6">Opción 6</option>
+                        <option value="opcion7">Opción 7</option>
+                        <option value="opcion8">Opción 8</option>
+                        <option value="opcion9">Opción 9</option>
+                    </select>
+
+                    <label for="lugares">Seleccione el lugar de la actividad</label>
+                    <select class="op_lugares" id="lugares" name="op_lugares">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                        <option value="opcion4">Opción 4</option>
+                        <option value="opcion5">Opción 5</option>
+                        <option value="opcion6">Opción 6</option>
+                        <option value="opcion7">Opción 7</option>
+                        <option value="opcion8">Opción 8</option>
+                        <option value="opcion9">Opción 9</option>
+                    </select>
+
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres" required>
+
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellidos" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+
+                    <label for="satisfaccion">Nivel de satisfacción</label>
+                    <select class="nivel_satisfaccion" id="satisfaccion" name="nivel_satisfaccion">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                        <option value="opcion4">Opción 4</option>
+                        <option value="opcion5">Opción 5</option>
+                    </select>
+
+                    <label for="comentario">Opinión</label>
+                    <textarea id="comentario" name="comentario" placeholder="Comentario" rows="6" required></textarea>
+
+                    <input type="submit" class="boton_envio" value="Enviar">
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+</body>
+</html>

@@ -40,6 +40,7 @@
 
 body {
     background: #fff;
+    margin: 0;
 }
 
 
@@ -61,7 +62,7 @@ header .logo{
 
 header nav{
     float: right;
-    margin-top: 35px;
+    margin-top: 40px;
     margin-right: 30px;
 }
 
@@ -88,7 +89,7 @@ header nav ul li a:hover{
 
 
 main {
-    margin-top: 120px;
+    margin-top: 25px;
 }
 
 main h1{
@@ -109,9 +110,20 @@ main .titulo{
 }
 
 main .carro{
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+main .card{
+    height: 450px;  
+}
+
+main .card-img-top{
+    height: 250px;
+}
+main .card-title{
+    margin-bottom: 15px;
 }
 
 footer {
